@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+body {
+  font-family: "Roboto";
+  background-color: #d14836;
+  color: white;
+}
+
+header{
+font-size: 2em;
+font-size: 30px;
+line-height: 26px;
+
+h1{
+margin: 0;
+line-height: 50px;
+}
+}
+
+
+#container {
+  background-color: white;
+
+}
+nav {
+  max-width: 190px;
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  li {
+    background-color: #d14836;
+
+    margin: 10px;
+    border-radius: 40px;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #d14836;
+  }
+  
+}
+
+main {
+  width: auto;
+  a {
+    color: #d14836;
+  }
+  h1 {
+    color: #d14836;
+  }
+  h2 {
+    color: #d14836;
+  }
+  p {
+    color: black;
+  }
+}
+
+aside{
+  background-color: #F6DAD7;
+  color: #d14836;
+  padding: 10px;
+}
+footer{
+  font-size: 70%;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen  and (max-width:600px) {
+  
+
+}
+
+@media (min-width:601px)  {
+  
+  #container{
+    display: grid;
+    grid-template-areas: "m n" "a a" ;
+    gap: 10px;
+
+  }
+
+  aside{
+   grid-area: a;
+  }
+
+  nav{
+    grid-area: n;
+  }
+
+  main{
+    grid-area: m;
+    margin-left: 10px;
+  }
+
+
+
+
+}
