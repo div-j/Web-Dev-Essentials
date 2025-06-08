@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+   
+</head>
+<body>
+    <h1>JavaScript Tutorial</h1>
+    <p id="demo">Hello guys</p>
+    <div id="container">
+
+    </div>
+    
+    <button id="btn" onclick="update_p_element()">click me</button>
+
+    <button onclick="greetAnybody('Daivd')">Greet</button>
+
+
+     
+    <!-- <script src="basic.js"></script> -->
+
+    <script>
+        //function
+
+        function update_p_element() {
+              document.getElementById("demo").innerText= "i love javascript"
+        }
+
+        //call function
+
+
+        first_name = "sudais"
+        last_name = "ayo"
+
+        //concatination
+        greet = "good morning "+first_name +" " +last_name
+
+        msg = `Thank you ${first_name} ${last_name}`
+
+        console.log(greet);
+        console.log(msg);
+
+        //function with parameter
+          function greetAnybody(name){
+        var msg = "good day "+name
+        console.log(msg);
+        }
+        
+        // DOM : CRUD
+
+        //Creating
+       myh1 =  document.createElement("h1")
+       myp =  document.createElement("p")
+      var myText =  document.createTextNode("I am created from javascript")
+      myp.appendChild(myText)
+       console.log(myh1);
+       console.log(myp)
+
+       //Read
+       document.getElementById('container').appendChild(myText)
+       
+       //update
+      document.getElementById("demo").innerText ="Sorry guys"
+
+      //delete
+      document.getElementById("btn").remove()
+
+        
+        
+      
+    </script>
+</body>
+</html>
